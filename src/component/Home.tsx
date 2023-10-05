@@ -1,22 +1,59 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,  } from "react-router-dom";
 import { IuserArr, userInterface } from "./Create";
 
 
 const Home = () => {
   
   const [data, setData] = useState<IuserArr | any>([]);
+  const formData = {
 
+    id:data.id,
+    name: data.name,
+    username: data.username,
+    email: data.email,
+   
+    address:{
+       street: data.street,
+      suite: data.suite,
+      city: data.city,
+      zipcode: data.zipcode,
+
+      geo: {
+        lat: data.lat,
+        lng: data.lng,
+      }
+    },
+    phone: data.phone,
+    website: data.website,
+    
+    company: {
+      name: data.name,
+      catchPhrase: data.catchPhrase,
+      bs: data.bs,
+    },
+  }
+  
   useEffect(() => {
     axios
-      .get("http://localhost:5000/users")
+      .get("http://localhost:5000/users/")
       .then((res) => setData(res.data))
 
       .catch((err) => console.log(err));
   }, []);
 
   console.log(data)
+  const handleDelete = (id: any) => {
+    const confirm = window.confirm("would you like to Delete?");
+    if(confirm){
+      axios.delete("http://localhost:5000/users/" +id)
+      .then(res =>{
+        location.reload()
+
+      }).catch(err => console.log(err));
+    }
+  }
   return (
     <>
       <div className="d-flex flex-column justify-content-center col-md-8 align-items-center mt-2 bg-light">
@@ -40,12 +77,12 @@ const Home = () => {
                 <th>suite</th>
                 <th>city</th>
                 <th>zipcode</th>
-                <th>lat</th>
-                <th>ing</th>
+                <th>Lat</th>
+                <th>lng</th>
                 <th>phone</th>
                 <th>website</th>
                 
-                <th>name</th>
+                
                 <th>catchPhrase</th>
                 <th>bs</th>
                 <th>Acion</th>
@@ -61,25 +98,24 @@ const Home = () => {
                   <td>{d.name}</td>
                   <td>{d.username}</td>
                   <td>{d.email}</td>
-                  <td>{d.address?.street}</td>
+                  <td>{d.address.street}</td>
                   <td>{d.address.suite}</td>
                   <td>{d.address.city}</td>
                   <td>{d.address.zipcode}</td>
                   <td>{d.address.geo.lat}</td>
-                  <td>{d.address.geo.ing}</td>
+                  <td>{d.address.lng}</td>
                   <td>{d.phone}</td>
                   <td>{d.website}</td>
-                  
-                  <td>{d.company.catchPhrase}</td>
+      
                   <td>{d.company.catchPhrase}</td>
                   <td>{d.company.bs}</td>
                   
                   <td><Link to = {`/read/${d.id}`} className="btn btn-sm btn-primary">Read</Link></td>
                     <td>
-                    <button className="btn btn-sm btn-primary">Edit</button>
+                    <Link to = {`/update/${d.id}`} className="btn btn-sm btn-primary">Edit</Link>
                     </td>
                     <td>
-                    <button className="btn btn-sm btn-danger">Delete</button>
+                    <button className="btn btn-sm btn-danger" onClick={() => handleDelete(d.id)}>Delete</button>
                   </td>
                   
 
