@@ -41,6 +41,7 @@ const Read = () => {
   ]);
 const {id} = useParams();
   useEffect(() => {
+    
     axios
       .get("http://localhost:5000/users/" + id)
       .then((res) => setData(res.data))
