@@ -1,8 +1,11 @@
 
 
+
 const Update = () => {
   return (
-    <div>Update</div>
+    <div className="col-md-6">
+  
+    </div>
   )
 }
 
