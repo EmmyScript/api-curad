@@ -66,7 +66,7 @@ const {id} = useParams();
     <div className="col-md-8">
       <form onSubmit={handleUpdate}>
         <div className="row">
-          <div className="title text-center mb-3">UPDATE USERS</div>
+          <div className="title text-center mb-3 bg-primary text-white">UPDATE USERS</div>
           <div className="col-md-6">
             <AppInput
               type="number"

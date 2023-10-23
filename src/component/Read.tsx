@@ -45,8 +45,8 @@ const {id} = useParams();
   }, []);
   return (
     <div className="d-flex w-100 vh-50 justify-content-center align-items-center bg-light">
-      <div className="w-50 border bg-white shadow px-5 pt-3 pb-5 rounded">
-        <h3 className="text-center">Detail of Users</h3> 
+      <div className="w-50 border bg-white shadow px-2 pt-3 pb-5 rounded">
+        <h3 className="text-center bg-primary text-white ">DETAIL OF USERS</h3> 
         <div className="mb-2">
           <strong>id: {data.id}</strong>
         </div>

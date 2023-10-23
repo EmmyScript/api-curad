@@ -107,7 +107,7 @@ const Create = () => {
       <div className="col-md-8">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="title text-center mb-3">Add Users</div>
+            <div className="title text-center mb-3 bg-primary text-white">Add USERS</div>
             <div className="col-md-6">
               <AppInput
                 type="number"
@@ -194,7 +194,7 @@ const Create = () => {
             <div className="col-md-6">
               <AppInput
                 type="text"
-                label="ing"
+                label="lng"
                 name="lng"
                 value={allValue.lng}
                 onChange={handleValues}

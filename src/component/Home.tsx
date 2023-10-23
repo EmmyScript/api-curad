@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link,  } from "react-router-dom";
 import { IuserArr, userInterface } from "./Create";
+import Navbar from "./Navbar";
 
 
 const Home = () => {
@@ -56,16 +57,17 @@ const Home = () => {
   }
   return (
     <>
-      <div className="d-flex flex-column justify-content-center col-md-8 align-items-center mt-2 bg-light">
-        <h1>List of Userssee</h1>
-        <div className="w-75 rounded bg-white shado p-4">
+    <Navbar />
+      <div className="d-flex flex-column justify-content-center  align-items-center mt-2 bg-light">
+        <div className="col-md-2"></div>
+        <div className=" col-md-10  bg-success p-4">
           <div className="d-flex juustify-content-end">
             <Link to="/create" className="btn btn-success">
               Add +{" "}
             </Link>
           </div>
 
-          <table className="table table-striped">
+          <table className="table table-striped ">
             <thead>
               <tr>
                 <th>ID</th>
@@ -73,18 +75,18 @@ const Home = () => {
                 <th>UserName</th>
                 <th>Email</th>
                 
-                <th>street</th>
-                <th>suite</th>
-                <th>city</th>
-                <th>zipcode</th>
+                <th>Street</th>
+                <th>Suite</th>
+                <th>City</th>
+                <th>Zipcode</th>
                 <th>Lat</th>
-                <th>lng</th>
-                <th>phone</th>
-                <th>website</th>
+                <th>Lng</th>
+                <th>Phone</th>
+                <th>Website</th>
                 
                 
-                <th>catchPhrase</th>
-                <th>bs</th>
+                <th>CatchPhrase</th>
+                <th>Bs</th>
                 <th>Acion</th>
                 <th></th>
                 <th></th>
@@ -103,7 +105,7 @@ const Home = () => {
                   <td>{d.address.city}</td>
                   <td>{d.address.zipcode}</td>
                   <td>{d.address.geo.lat}</td>
-                  <td>{d.address.lng}</td>
+                  <td>{d.address.geo.lng}</td>
                   <td>{d.phone}</td>
                   <td>{d.website}</td>
       

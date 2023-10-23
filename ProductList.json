@@ -21,7 +21,8 @@
         "name": "Johns Group",
         "catchPhrase": "Configurable multimedia task-force",
         "bs": "generate enterprise e-tailers"
-      }
+      },
+      "street": "favour"
     },
     {
       "id": 8,
@@ -44,7 +45,8 @@
         "name": "Abernathy Group",
         "catchPhrase": "Implemented secondary concept",
         "bs": "e-enable extensible e-tailers"
-      }
+      },
+      "ing": ""
     },
     {
       "id": 9,
@@ -205,6 +207,52 @@
         "name": "55tt",
         "catchPhrase": "rrr",
         "bs": "6666"
+      }
+    },
+    {
+      "id": "81kL2hS",
+      "name": "",
+      "username": "",
+      "email": "",
+      "address": {
+        "street": "",
+        "suite": "",
+        "city": "",
+        "zipcode": "",
+        "geo": {
+          "lat": "",
+          "lng": ""
+        }
+      },
+      "phone": "",
+      "website": "",
+      "company": {
+        "name": "",
+        "catchPhrase": "",
+        "bs": ""
+      }
+    },
+    {
+      "id": "55",
+      "name": "Idoko Emmanuel",
+      "username": "mike john",
+      "email": "idokoemma.ogbole@gmail.comrrrr",
+      "address": {
+        "street": "Skiles Walks",
+        "suite": "rrrr",
+        "city": "South Christy",
+        "zipcode": "uii",
+        "geo": {
+          "lat": "555",
+          "lng": "555"
+        }
+      },
+      "phone": "",
+      "website": "demarco.info",
+      "company": {
+        "name": "Idoko Emmanuel",
+        "catchPhrase": "RESR",
+        "bs": "revolutionize end-to-end systems"
       }
     }
   ]
