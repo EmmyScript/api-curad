@@ -2,12 +2,11 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import AppInput from "./AppInput";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import {  userInterface } from "./Create";
 
 
 
 const Update = () => {
-  const [allValue, setAllValue] = useState<userInterface>({
+  const [allValue, setAllValue] = useState({
   
     id:"", 
     name: "",
