@@ -22,7 +22,14 @@
         "catchPhrase": "Configurable multimedia task-force",
         "bs": "generate enterprise e-tailers"
       },
-      "street": "favour"
+      "street": "favour",
+      "suite": "idoko",
+      "city": "South Christy",
+      "zipcode": "22",
+      "lat": "555",
+      "ing": "333",
+      "catchphrase": "eeeeee",
+      "bs": "e-enable innovative applications"
     },
     {
       "id": 8,
@@ -46,7 +53,14 @@
         "catchPhrase": "Implemented secondary concept",
         "bs": "e-enable extensible e-tailers"
       },
-      "ing": ""
+      "ing": "333",
+      "street": "lagos",
+      "city": "ikeja",
+      "lat": "44",
+      "suite": "40",
+      "zipcode": "333",
+      "catchphrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
     },
     {
       "id": 9,
@@ -207,30 +221,14 @@
         "name": "55tt",
         "catchPhrase": "rrr",
         "bs": "6666"
-      }
-    },
-    {
-      "id": "81kL2hS",
-      "name": "",
-      "username": "",
-      "email": "",
-      "address": {
-        "street": "",
-        "suite": "",
-        "city": "",
-        "zipcode": "",
-        "geo": {
-          "lat": "",
-          "lng": ""
-        }
       },
-      "phone": "",
-      "website": "",
-      "company": {
-        "name": "",
-        "catchPhrase": "",
-        "bs": ""
-      }
+      "lat": "555",
+      "city": "Roscoeview",
+      "ing": "333",
+      "zipcode": "33263",
+      "catchphrase": "Synchronised bottom-line interface",
+      "suite": "Suite 351",
+      "street": "barifga"
     },
     {
       "id": "55",
@@ -247,13 +245,52 @@
           "lng": "555"
         }
       },
-      "phone": "",
+      "phone": "024-648-3804",
       "website": "demarco.info",
       "company": {
         "name": "Idoko Emmanuel",
         "catchPhrase": "RESR",
         "bs": "revolutionize end-to-end systems"
-      }
+      },
+      "street": "ai uja",
+      "city": "rrrr",
+      "lat": "-31.8129",
+      "suite": "rrrr",
+      "zipcode": "22",
+      "ing": "333",
+      "catchphrase": "Synchronised bottom-line interface",
+      "bs": "yy"
+    },
+    {
+      "id": "2000",
+      "name": "Idoko Emmanuel favouur",
+      "username": "tjagaban",
+      "email": "Lucio_Hettinger@annie.ca",
+      "address": {
+        "street": "jagaban",
+        "suite": "Suite 351",
+        "city": "benue",
+        "zipcode": "ddd",
+        "geo": {
+          "lat": "40",
+          "lng": "rkr"
+        }
+      },
+      "phone": "210.067.6132",
+      "website": "ambrose.net",
+      "company": {
+        "name": "Idoko Emmanuel favouur",
+        "catchPhrase": "RESR",
+        "bs": "e-enable innovative applications"
+      },
+      "catchphrase": "favour",
+      "ing": "333",
+      "zipcode": "33263",
+      "suite": "eeeed",
+      "street": "Skiles Walks",
+      "city": "ggg",
+      "lat": "333",
+      "bs": "revolutionize end-to-end systems"
     }
   ]
 }

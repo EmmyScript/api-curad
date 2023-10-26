@@ -1,13 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link,  } from "react-router-dom";
-import { IuserArr, userInterface } from "./Create";
+import { IuserArr, } from "./Create";
 import Navbar from "./Navbar";
+import { userInterface } from "./Read";
 
 
 const Home = () => {
   
   const [data, setData] = useState<IuserArr | any>([]);
+
+  /*
   const formData = {
 
     id:data.id,
@@ -35,7 +38,8 @@ const Home = () => {
       bs: data.bs,
     },
   }
-  
+  */
+
   useEffect(() => {
     axios
       .get("http://localhost:5000/users/")
@@ -49,7 +53,7 @@ const Home = () => {
     const confirm = window.confirm("would you like to Delete?");
     if(confirm){
       axios.delete("http://localhost:5000/users/" +id)
-      .then(res =>{
+      .then(_res =>{
         location.reload()
 
       }).catch(err => console.log(err));
@@ -58,26 +62,30 @@ const Home = () => {
   return (
     <>
     <Navbar />
-      <div className="d-flex flex-column justify-content-center  align-items-center mt-2 bg-light">
-        <div className="col-md-2"></div>
-        <div className=" col-md-10  bg-success p-4">
+    <div className="container-fluid">
+      <div className="row">
+        
+      <div className="">
+        <div className=""></div>
+        <h2 className="text-center">List of Users </h2>
+        <div className=" container-fluid ">
           <div className="d-flex juustify-content-end">
             <Link to="/create" className="btn btn-success">
               Add +{" "}
             </Link>
           </div>
-
-          <table className="table table-striped ">
+          <div className="table-responsive-sm">
+          <table className="table  bg-dark">
             <thead>
               <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>UserName</th>
-                <th>Email</th>
+                <th className="primary">ID</th>
+                <th className="secondary">Name</th>
+                <th className="info">UserName</th>
+                <th className="danger">Email</th>
                 
-                <th>Street</th>
-                <th>Suite</th>
-                <th>City</th>
+                <th className="warning">Street</th>
+                <th className="success">Suite</th>
+                <th className="dark">City</th>
                 <th>Zipcode</th>
                 <th>Lat</th>
                 <th>Lng</th>
@@ -100,17 +108,17 @@ const Home = () => {
                   <td>{d.name}</td>
                   <td>{d.username}</td>
                   <td>{d.email}</td>
-                  <td>{d.address.street}</td>
-                  <td>{d.address.suite}</td>
-                  <td>{d.address.city}</td>
-                  <td>{d.address.zipcode}</td>
-                  <td>{d.address.geo.lat}</td>
-                  <td>{d.address.geo.lng}</td>
+                  <td>{d.street}</td>
+                  <td>{d.suite}</td>
+                  <td>{d.city}</td>
+                  <td>{d.zipcode}</td>
+                  <td>{d.lat}</td>
+                  <td>{d.lng}</td>
                   <td>{d.phone}</td>
                   <td>{d.website}</td>
       
-                  <td>{d.company.catchPhrase}</td>
-                  <td>{d.company.bs}</td>
+                  <td>{d.catchPhrase}</td>
+                  <td>{d.bs}</td>
                   
                   <td><Link to = {`/read/${d.id}`} className="btn btn-sm btn-primary">Read</Link></td>
                     <td>
@@ -125,7 +133,11 @@ const Home = () => {
               ))}
             </tbody>
           </table>
+          </div>
         </div>
+      </div>
+    <div className="col-md-2"></div>
+      </div>
       </div>
     </>
   );

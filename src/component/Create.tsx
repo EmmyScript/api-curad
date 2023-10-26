@@ -2,8 +2,12 @@ import axios from "axios";
 import { useState } from "react";
 import AppInput from "./AppInput";
 import { Link, useNavigate } from "react-router-dom";
+import { userInterface } from "./Read";
 
+/*
 export interface userInterface {
+  address: any;
+  company: any;
  
 
   id: string | number
@@ -26,10 +30,13 @@ export interface userInterface {
   
 }
 
+}
+*/
+
+
 export interface IuserArr {
   userInterface: [];
 }
-
 const Create = () => {
   const [allValue, setAllValue] = useState<userInterface>({
     id:"", 
@@ -102,6 +109,8 @@ const Create = () => {
 
 
   return (
+    <>
+    <div className="container-fluid">
     <div className="row">
       <div className="col-md-2"></div>
       <div className="col-md-8">
@@ -260,6 +269,8 @@ const Create = () => {
         </form>
       </div>
     </div>
+    </div>
+    </>
   );
 };
 

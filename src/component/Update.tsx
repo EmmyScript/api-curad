@@ -2,7 +2,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import AppInput from "./AppInput";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { IuserArr, userInterface } from "./Create";
+import {  userInterface } from "./Create";
 
 
 
