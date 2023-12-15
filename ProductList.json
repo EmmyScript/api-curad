@@ -383,6 +383,29 @@
         "catchPhrase": "rrrr",
         "bs": "e-enable innovative applications"
       }
+    },
+    {
+      "id": "30",
+      "name": "Idoko Emmanuel",
+      "username": "blessing",
+      "email": "idokoemma.ogbole@gmail.com",
+      "address": {
+        "street": "dddd",
+        "suite": "eeeed",
+        "city": "rrrr",
+        "zipcode": "33263",
+        "geo": {
+          "lat": "-71.4197",
+          "lng": "555"
+        }
+      },
+      "phone": "024-648-3804",
+      "website": "ola.org",
+      "company": {
+        "name": "Idoko Emmanuel",
+        "catchPhrase": "rrrr",
+        "bs": "eeee"
+      }
     }
   ]
 }

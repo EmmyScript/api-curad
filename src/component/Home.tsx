@@ -5,7 +5,7 @@ import { IuserArr, } from "./Create";
 import Navbar from "./Navbar";
 import { userInterface } from "./Read";
 
-// npm run jsonserver
+// npm run jsonserver// npm run dev in terminal
 const Home = () => {
   
   const [data, setData] = useState<IuserArr | any>([]);
